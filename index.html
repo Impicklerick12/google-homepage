@@ -1,19 +1,128 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Google</title>
-    </head>
+<head>
+<meta charset="utf-8">
+<title>Google</title>
+</head>
+<style>
+        ul {
+            list-style-type: none;
+            padding: 0;
+            overflow: hidden;
+        }
+        li {
+            float: left;
+        }
+        li a {
+            color: black;
+            font-family: Arial, Helvetica;
+            font-size: 13px;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            padding-left: 10px;
+            padding-right: 7px;
+        }
+        #google-logo {
+            display: block;
+            padding-top: 80px;
+            margin-top: 47px;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: auto;
+            background-color: #f5f5f5;
+            font-size: 14px;
+            border-top: 1px solid #e4e4e4;
+        }
+        .footer a {
+            color: #5f6368;
+            padding-inline-end: 15px;
+        }
+        .buttons {
+            background-color: #f5f5f5;
+            border: none;
+            color: #5F6368;
+            border-radius: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 0 16px;
+            height: 36px;
+        }
+        .centre {
+            margin: auto;
+        }
+        .magnifying-glass {
+            width: 25px;
+            height: 25px;
+            margin: auto 10px;
+            padding: 5px;
+        }
+        .microphone {
+            height: 20px;
+            margin: auto 10px;
+            padding: 10px;
+        }
+        .search-bar {
+            margin: 25px auto;
+            height: 45px;
+            width: 570px;
+            border: .5px solid #DCDCDC;
+            border-radius: 25px;
+            display: flex;
+        }
+        .text-field {
+            height: 40px;
+            width: 500px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+        }
+        .app-image {
+            height: 25px;
+            width: 25px;
+            margin-block-start: -3px;
+            margin-inline-start: 5px;
+        }
+
+</style>
     <body>
         <div>
-            <a href="https://about.google/?fg=1&utm_source=google-AU&utm_medium=referral&utm_campaign=hp-header">About</a>
+            <ul>
+                <li><a href="https://about.google/?fg=1&utm_source=google-AU&utm_medium=referral&utm_campaign=hp-header">About</a></li>
+                <li><a href="https://store.google.com/">Store</a></li>
+                <li style="float:right">
+                    <a href="https://www.google.com.au/intl/en/about/products?tab=wh">
+                    <img src="images/apps.png" class="app-image"></li>
+                <li style="float:right"><a href="https://www.google.com.au/imghp?hl=en&tab=wi&ogbl">Images</a></li>
+                <li style="float:right"><a href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a></li>
+            </ul>
         </div>
         <div>
-            <a href="https://store.google.com/">Store</a>
-        </div>
-        <div>
-            <img href="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt= "Google Logo">
-        </div>
-        
+            <img id="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt= "Google Logo" class="centre">
+        </div><br>
+        <div class="search-bar" style="text-align: center">
+            <img src="images/magnifying_glass.png" class="magnifying-glass" alt="Magnifying Glass">
+            <input class="text-field" type:" ">
+            <img src="images/mic.png" class="microphone" alt="Microphone">
+        </div><br>
+        <div style="text-align: center;">
+                <button class="buttons">Google Search</button>
+                <button class="buttons">I'm feeling lucky</button>
+            </div>
+        <nav class="footer">
+            <ul>
+                <li><a href="https://www.google.com/intl/en_au/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
+                <li><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a></li>
+                <li><a href="https://google.com/search/howsearchworks/?fg=1">How Search works</a></li>
+                <li style="float:right"><a href="https://www.google.com/preferences?hl=en">Settings</a></li>
+                <li style="float:right"><a href="https://policies.google.com/terms?fg=1">Terms</a></li>
+                <li style="float:right"><a href="https://policies.google.com/privacy?fg=1">Privacy</a></li>
+            </ul>
+        </nav>
     </body>
 </html>
